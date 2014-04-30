@@ -17,7 +17,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Constraint(validatedBy = com.dvir.spring.test.web.validation.ValidEmailImpl.class)
 public @interface ValidEmail {
 
-	String message() default "This does not appear to be a valid email";
+	String message() default "This does not appear to be a valid email please retry.. ";
 
 	Class<?>[] groups() default {};
 
